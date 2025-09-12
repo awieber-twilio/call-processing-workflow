@@ -1,4 +1,6 @@
 ## Architecture Diagram
+TODO: Add diagram
+
 ## Running the code
 
 Install dependencies with `npm install`.
