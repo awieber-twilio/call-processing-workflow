@@ -2,6 +2,9 @@ import { NativeConnection, Worker } from '@temporalio/worker';
 import * as activities from './activities';
 import { TASK_QUEUE_NAME } from './shared';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 async function run() {
   // Step 1: Establish a connection with Temporal server.
   //
@@ -11,6 +14,7 @@ async function run() {
     address: 'localhost:7233',
     // TLS and gRPC metadata configuration goes here.
   });
+  
   try {
     // Step 2: Register Workflows and Activities with the Worker.
     const worker = await Worker.create({
