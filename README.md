@@ -1,5 +1,5 @@
 ## Architecture Diagram
-TODO: Add diagram
+![architecture diagram](architecture.png)
 
 ## Running the code
 
